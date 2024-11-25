@@ -1,5 +1,5 @@
  # Expense Tracker React App
- 
+    
 This is a simple React application for tracking your expenses.
  
 ## Features
