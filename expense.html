@@ -1,0 +1,105 @@
+<!-- index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0" />
+    <link rel="stylesheet" 
+          href="style.css" />
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+    <div>
+        <h1 style="color: green;">
+              GeeksforGeeks
+          </h1>
+        <h3>Expense Tracker Using JavaScript</h3>
+    </div>
+    <div class="summary">
+        <div>
+            <h1>&#10004; Balance:
+                <span id="updatedBal">
+                      7000
+                  </span>
+            </h1>
+        </div>
+        <br />
+        <div class="total">
+            <div>
+                Total Income:
+                <div>
+                    <h2 style="color: green;"
+                        id="updatedInc">
+                        25000
+                    </h2>
+                </div>
+            </div>
+            <hr class="verticle" />
+            <div>
+                Total Expenses:
+                <div>
+                    <h2 style="color: red;" 
+                        id="updatedExp">
+                        18000
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="root">
+        <div id="items">
+            <h2>Expenses</h2>
+            <table id="table">
+                <tr class="titles">
+                    <th>S.no.</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </div>
+        <hr class="vertical" />
+        <div id="new">
+            <h2>Add new</h2>
+
+            <div class="inputs">
+                <div class="inputitem">
+                    <p style="width: 9rem">
+                        Entry type:
+                    </p>
+                    <select id='itemType'>
+                        <option value="0">Expense</option>
+                        <option value="1">Income</option>
+                    </select>
+                </div>
+                <div class="inputitem">
+                    <p style="width: 9rem">Name:</p>
+                    <input id="name" 
+                           type="text"
+                           value="" 
+                           placeholder="name" />
+                </div>
+                <div class="inputitem">
+                    <p style="width: 9rem">Amount:</p>
+                    <input value="0" 
+                           id="amount"
+                           name="mod" 
+                           type="number" 
+                           placeholder="amount" />
+                </div>
+            </div>
+            <button onclick="addItem()">
+                Add Expense
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
